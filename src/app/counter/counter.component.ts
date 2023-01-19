@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 export class CounterComponent {
 
     constructor() {}
-    
+    public title: string = 'Counter';
     public counter: number = 10;
   
     increaseBy( value: number ): void {
