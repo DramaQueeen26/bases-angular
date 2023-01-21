@@ -14,7 +14,20 @@ export class HeroComponent {
     return this.name.toUpperCase();
   }
 
-  public getHeroDescription(): string {
+  getHeroDescription(): string {
     return `${ this.name } - ${ this.age } `;
+  }
+
+  changeHero(): void {
+    this.name = 'Spiderman';
+  }
+
+  changeAge(): void {
+    this.age = 20;
+  }
+
+  resetForm(): void {
+    this.name = 'ironman';
+    this.age = 45;
   }
 }
